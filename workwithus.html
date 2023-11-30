@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Factory</title>
+  <link rel="icon" STYLE="border-radius: 50%;"   href="R.jpg" type="image/x-icon">
+</head>
+<body> 
+    <style>
+
+
+.container{
+  
+  max-width:550px;
+  
+}
+input{
+  padding:10px;
+  margin-bottom:10px;
+}
+select{
+    padding:10px;
+  margin-bottom:10px;
+}
+
+P {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+P:hover{
+  
+    color: #333;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid green;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+input:hover{
+  border-color:orange;
+}
+select:hover{
+  border-color:red;
+}
+.button{
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.button:hover {
+  background-color:white;
+  border-color: green;
+  color: black;
+  cursor: pointer;
+}
+nav{
+         width: 100%;
+         height: 100px;
+         color:rgb(71, 0, 0);
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+     }
+     .logo{
+         font-size: 2em;
+         letter-spacing: 2px;
+     }
+     .menu a{
+         text-decoration: none;
+         color:white;
+         padding: 10px 20px;
+         font-size: 20px;
+         position:relative;
+
+     }
+      .menu a:before{
+          content:' ';
+          position: absolute;
+          top:0;
+          left:0;
+          width: 0%;
+          height: 100%;
+          border-bottom: 2px solid rgba(255, 134, 134, 0.835);
+          transition: 0.4s;
+
+      }
+      .menu a:hover:before{
+          width: 90%;
+      }
+      
+      .register a{
+          text-decoration: none;
+          color: white;
+          padding: 10px 20px;
+          font-size: 20px;
+          background: rgb(174, 41, 41);
+          border-radius: 8px;
+          transition: 0.4s;
+      }
+      .register a:hover{
+          background: transparent;
+          border: 1px solid rgb(63, 37, 37);
+      }
+      
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    </style><center>
+      
+    <nav>
+        <div class="logo" style="color: rgb(255, 255, 255);">
+          𝓒𝓸𝓭𝓮 𝓕𝓪𝓬𝓽𝓸𝓻𝔂!!
+        </div>
+        <div class="menu">
+            <a href="home.html"> Home</a>
+            <a href="course.html">Course</a>
+            <a href="notes.html">Notes</a>
+            <a href="contactme.html">Contact me</a>
+            <a style="color:red; background-color: white; border-radius: 5px ;"  href="workwithus.html">Work with us</a>
+            <a href="yourlab.html">your Lab</a>
+            <a style="background-color: rgb(107, 107, 248); border-radius: 5px;" href="loginpage.html">Sign in</a>
+         </div>
+         <div class="register">
+             <img  style="border-radius: 50%;" height="50px"   src="raj.png">
+
+         </div>
+    </nav>
+  <div class="container">
+    
+
+    <form style="border-radius: 10px; border: solid white ; background-color: rgb(185, 201, 197);" method="post" name="google-sheet"  tyle="background-color: rgb(50, 99, 205); border: solid white ;  border-radius: 7px;">
+      <p>Apply Now!</p> 
+      <input name="name" id="name" placeholder="enter your name" type="text">
+      <br>
+            <input name="email" id="email" placeholder="enter your email" type="email">
+      <br>
+            <input name="number" id="number" placeholder="enter your phone number " type="tel">
+      <br>
+            <input name="link" id="link" placeholder="Link to your resume" type="text"><br>
+      <table>
+        <tr>
+          <td>
+            <p>Your city</p></td><td>
+   <select name="city" id="indianCities">
+
+    <option value="ghazipur">Ghazipur</option>
+  <option value="Mumbai">Mumbai</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Bangalore">Bangalore</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Kolkata">Kolkata</option>
+  <option value="Pune">Pune</option>
+  <option value="Ahmedabad">Ahmedabad</option>
+  <option value="Jaipur">Jaipur</option>
+  <option value="Lucknow">Lucknow</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Bhopal">Bhopal</option>
+  <option value="Indore">Indore</option>
+  <option value="Kochi">Kochi</option>
+  
+          </select></td></tr><tr><td>
+        <p>Your Experience</p></td><td>
+   <select name="experiance" id="years">
+
+     <option value="No experiance">No experiance</option>
+  <option value="3 months">0-3 months</option>
+  <option value="3-6 months">3-6 months</option>
+  <option value="6-12months">6-12 months</option>
+  <option value="1 years">1 year</option>
+  <option value="2 year">2 year</option>
+  <option value="3-5 yesrs">3-5 years</option>
+  <option value="5-7 years">5-7 years</option>
+  <option value="more than 7 years">more than 7 years</option>
+  
+  
+        </select></td></tr></table>
+<div class="skillss">
+      <p>Your skills</p>
+<table border="0px">
+  <tr>
+   <td><label>
+     <input type="radio" name="skills" value=" Front-end-dev"> Front-end-dev
+      </label></td>
+  <td><label>
+        <input type="radio" name="skills" value="Back-end-dev"> Back-end-dev
+    </label></td>
+  </tr>
+  <tr>
+    <td><label>
+        <input type="radio" name="skills" value="Full-stack-dev MERN"> Full-stack-dev MERN
+      </label></td><td>
+  <label>
+        <input type="radio" name="skills" value="Full-stack-dev MEAN"> Full-stack-dev MEAN
+    </label></td>
+  </tr>
+  <tr>
+    <td>
+      
+
+  <label>
+        <input type="radio" name="skills" value=" Python dev"> Python dev
+      </label></td><td>
+  <label>
+        <input type="radio" name="skills" value=" Java dev"> Java dev
+    </label></td></tr><tr><td>
+  <label>
+        <input type="radio" name="skills" value=" Vedio editor"> Vedio editor
+  </label></td><td>
+  <label>
+        <input type="radio" name="skills" value="Php dev"> Php dev
+  </label></td></tr><tr><td>
+  <label>
+    
+        <input type="radio" name="contribute" value=" Want to upload your course"> Want to upload your course
+  </label></td></tr>
+    
+    </div> </table>
+  <input type="submit" class="button" value="submit"  name="submit">
+  <P style="color:red; font-size:16px;">We will be in touch soon!</P>
+    </form>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyBotvuVbYXfVGyzEqmQ6ilGysFsecpIkS7HhuAeHJ8VedUhyjcCOcAkLfv8c6N6xL1/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    </div>
+  </center>
+  <style>
+    body {
+    background-image: url(Green\ Modern\ Zoom\ Virtual\ Background.png);
+    background-size: 400% 400%;
+  
+}
+  </style>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codefactory</title>
+    <link rel="icon" STYLE="border-radius: 50%;"   href="media/R.jpg" type="image/x-icon">
+   
+    <script>
+         function goToHome() {
+            window.location.href = 'home.html';
+        }
+    </script>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            background-image: url("media/Green\ Modern\ Zoom\ Virtual\ Background.png");
+            background-repeat: no-repeat;
+            background-size:100% ;
+        }
+        a{
+            color:rgb(0, 0, 0);
+            text-decoration: solid;
+            min-height: 30px;
+            
+        }
+        a:hover{
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+            cursor: pointer;
+            min-height: 35px;
+        }
+li {
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-color: rgb(5, 0, 0);
+    border-radius: 16px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    overflow: hidden;
+ 
+  }
+
+  li:hover {
+    background-color: rgb(112, 216, 129);
+    border: solid;
+    border-color: white;
+    border-radius: 16px;
+    
+  }
+        .playlist {
+            display: flex;
+        }
+
+        .playlist ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+        }
+
+        .playlist li {
+            margin-bottom: 10px;
+            min-height: 25px;
+        }
+
+        .video-container {
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+        nav{
+         width: 100%;
+         height: 100px;
+         color:rgb(71, 0, 0);
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+     }
+     .logo{
+         font-size: 2em;
+         letter-spacing: 2px;
+     }
+     .menu a{
+         text-decoration: none;
+         color:white;
+         padding: 10px 20px;
+         font-size: 20px;
+         position:relative;
+
+     }
+      .menu a:before{
+          content:' ';
+          position: absolute;
+          top:0;
+          left:0;
+          width: 0%;
+          height: 100%;
+          border-bottom: 2px solid rgba(255, 134, 134, 0.835);
+          transition: 0.4s;
+
+      }
+      .menu a:hover:before{
+          width: 90%;
+      }
+      
+      .register a{
+          text-decoration: none;
+          color: white;
+          padding: 10px 20px;
+          font-size: 20px;
+          background: rgb(174, 41, 41);
+          border-radius: 8px;
+          transition: 0.4s;
+      }
+      .register a:hover{
+          background: transparent;
+          border: 1px solid rgb(63, 37, 37);
+      }
+
+        iframe {
+            width: 120vh;
+            height: 90vh;
+            
+        }
+      
+    </style>
+</head>
+<content>
+    <nav>
+        <div class="logo" style="color: rgb(255, 255, 255);">
+     
+        </div>
+      
+         
+    </nav>
+</content>
+<body>
+
+   
+    <div class="playlist">
+        <ul>
+           
+
+            <li style="background-color: rgb(184, 207, 184); color: red;  cursor: pointer;" onclick="goToHome()"> <h2 style="color: rgb(222, 7, 7);">Home</h2> </li>
+            <a href="media/1 HTML 5H37M.mp4" data-src="media/1 HTML 5H37M.mp4"><h3><li>1HTML</li></h3></a>
+            <a href="media/2 CSS  17H12M.mp4" data-src="media/2 CSS  17H12M.mp4"><b><li>2 CSS</li></b></a>
+            <a href="media/3 JAVASCRIPT 1 9H.mp4" data-src="media/3 JAVASCRIPT 1 9H.mp4"><b><li>3 JS PART 1</li></b></a>
+           <b> <a href="media/4 JAVASCRIPT 2 10H15M.mp4" data-src="media/4 JAVASCRIPT 2 10H15M.mp4"><li>4 JS PART 2</li></a></b>
+           <b> <a href="media/5 GIT AND GITHUB 1H15M.mp4" data-src="media/5 GIT AND GITHUB 1H15M.mp4"><li>5 GIT & GITHUB</li></a></b>
+           <b> <a href="media/6 BOOTSTRAP  2H20M.mp4" data-src="media/6 BOOTSTRAP  2H20M.mp4"><li>6 BOOTSTRAP</li></a></b>
+           <b> <a href="media/7 TAILWIND tut CSS 2H.mp4" data-src="media/7 TAILWIND tut CSS 2H.mp4"><li>7 TAILWIND</li></a></b>
+        <b> <a href="media/8 TAILWIND CSS PROJ 30M.mp4" data-src="media/8 TAILWIND CSS PROJ 30M.mp4"><li>8 TAILWIND PROJECT</li></a></b>
+    <b> ><a href="media/9 FRONT END PROJECT2H45M.mp4" data-src="media/9 FRONT END PROJECT2H45M.mp4"><li>9 FRONT RND FINAL PROJECT</li></a></b>
+           <b> <a href="media/10 SQL 3H15M.mp4" data-src="media/10 SQL 3H15M.mp4"><li>10 SQL</li></a></b>
+           <b> <a href="media/11 MONGODB 5H20M.mp4" data-src="media/11 MONGODB 5H20M.mp4"><li>11 MONGODB</li></a>    </b>                             
+           
+        
+        </ul>
+        <div class="video-container">
+            <iframe id="video-player" src="" frameborder="0" allowfullscreen>
+                
+            </iframe>
+        </div>
+        <ul style="margin-left: 30px;">
+         
+          <b><a href="media/12 NODE AND EXPRESS 6H.mp4" data-src="media/12 NODE AND EXPRESS 6H.mp4"><li>12 NODE AND EXPRESS</li></a></b>
+          <b><a href="media/13 USER AUTHENTICATION  20M.mp4" data-src="media/13 USER AUTHENTICATION  20M.mp4"><li>13 USER AUTHENTICATION  </li></a></b>
+          <b><a href="media/14 PASSPORT.JS 30M.mp4" data-src="media/14 PASSPORT.JS 30M.mp4"><li>14 PASSPORT.JS</li></a></b>
+          <b><a href="media/15 fastAPI  1H15M.mp4" data-src="media/15 fastAPI  1H15M.mp4"><li>15 FastAPI</li></a></b>
+          <b><a href="media/16 RESTful API 1H.mp4" data-src="media/16 RESTful API 1H.mp4"><li>16  RESTful API</li></a></b>
+          <b><a href="media/17 REACT 1 8H30M.mp4" data-src="media/17 REACT 1 8H30M.mp4"><li>17 REACT PART 1</li></a></b>
+          <b><a href="media/18 REACT  2 8H 46M.mp4" data-src="media/18 REACT  2 8H 46M.mp4"><li>18 REACT PART 2</li></a></b>
+          <b><a href="media/19 NEXT JS AUTHENTICATION 4H.mp4" data-src="media/19 NEXT JS AUTHENTICATION 4H.mp4"><li>19 JS AUTHENTICATION</li></a></b>
+          <b><a href="media/20 TYPESCRIPT 7H30M.mp4" data-src="media/20 TYPESCRIPT 7H30M.mp4"><li>20 TYPESCRIPT</li></a></b>
+          <b><a href="media/21 ADVANCE JAVASCRIPT 8H12M.mp4" data-src="media/21 ADVANCE JAVASCRIPT 8H12M.mp4"><li>21 ADVANCE JAVASCRIPT</li></a></b>
+          <b><a href="media/22 PROJECT ECOMMERCE  11H.mp4" data-src="media/22 PROJECT ECOMMERCE  11H.mp4"><li>22 PROJECT 1</li></a></b>
+          <b><a href="media/23 PROJECT ECOMMERCE 12H.mp4" data-src="media/23 PROJECT ECOMMERCE 12H.mp4"><li>23 PROJECT 2</li></a></b>
+        </ul>
+    </div>
+    <script>
+        const videoLinks = document.querySelectorAll('a');
+        const videoPlayer = document.getElementById('video-player');
+    
+        videoLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const videoSrc = this.getAttribute('data-src');
+                videoPlayer.src = videoSrc;
+                videoPlayer.play(); 
+            });
+        });
+    
+        videoPlayer.src = "media/Pink Black Neon Welcome To My Channel Video.mp4";
+        videoPlayer.play();
+    </script>
+    
+</body>
+</html>

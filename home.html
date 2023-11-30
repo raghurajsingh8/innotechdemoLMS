@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Factory</title>
+    
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" STYLE="border-radius: 50%;"   href="/R.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+    *{padding: 0; margin:0; box-sizing: border-box; }
+     header{
+         width: 100%;
+         height: 100vh;
+       background-image: url("home_back.png");
+         background-size: cover;
+         font-family: sans-serif;
+
+     }
+ 
+     nav{
+         width: 100%;
+         height: 100px;
+         color:rgb(71, 0, 0);
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+     }
+     .logo{
+         font-size: 2em;
+         letter-spacing: 2px;
+     }
+     .menu a{
+         text-decoration: none;
+         color:white;
+         padding: 10px 20px;
+         font-size: 20px;
+         position:relative;
+
+     }
+      .menu a:before{
+          content:' ';
+          position: absolute;
+          top:0;
+          left:0;
+          width: 0%;
+          height: 100%;
+          border-bottom: 2px solid rgba(255, 134, 134, 0.835);
+          transition: 0.4s;
+
+      }
+      .menu a:hover:before{
+          width: 90%;
+      }
+      
+      .register a{
+          text-decoration: none;
+          color: white;
+          padding: 10px 20px;
+          font-size: 20px;
+          background: rgb(174, 41, 41);
+          border-radius: 8px;
+          transition: 0.4s;
+      }
+      .register a:hover{
+          background: transparent;
+          border: 1px solid rgb(63, 37, 37);
+      }
+      .h-txt{
+          min-width: 80%;
+          position:absolute;
+          top: 50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          text-align: center;
+          color: rgb(255, 255, 255);
+      }
+      .h-txt span{
+         letter-spacing: 5px ;
+      }
+      .h-txt h1{
+          font-size: 3.5em;
+      }
+      
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+
+h3{
+    text-align: center;
+    max-width:34%;
+    margin-left: 516px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+    </style>
+</head>
+<body>  
+    <header>
+      <nav>
+          <div class="logo" style="color: rgb(255, 255, 255);">
+            𝓒𝓸𝓭𝓮 𝓕𝓪𝓬𝓽𝓸𝓻𝔂!!
+          </div>
+          <div class="menu">
+              <a href="home.html"   style="color:red; background-color: white; border-radius: 5px ;" > Home</a>
+              <a href="course.html">Course</a>
+              <a href="notes.html">Notes</a>
+              <a href="contactme.html">Contact me</a>
+              <a href="workwithus.html">Work with us</a>
+              <a href="yourlab.html">your Lab</a>
+              <a style="background-color: rgb(107, 107, 248); border-radius: 5px;" href="loginpage.html">Sign in</a>
+           </div>
+           <div class="register">
+               <img  style="border-radius: 50%;" height="50px"   src="raj.png">
+
+           </div>
+      </nav>
+      <section class="h-txt">
+          
+      </p> 
+      <br><br><br><br>
+          
+          <h1 style="color: rgb(255, 255, 255);">
+            𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐂𝐨𝐝𝐞𝐟𝐚𝐜𝐭𝐨𝐫𝐲 <span id="userheader"></span>
+           
+          </h1>
+          <br>
+         <h3  style="padding: 5px; color: rgb(255, 255, 255); ">
+            "𝐀𝐭 𝐂𝐨𝐝𝐞𝐅𝐚𝐜𝐭𝐨𝐫𝐲, 𝐰𝐞'𝐫𝐞 𝐝𝐞𝐝𝐢𝐜𝐚𝐭𝐞𝐝 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐣𝐨𝐮𝐫𝐧𝐞𝐲. 𝐖𝐡𝐞𝐭𝐡𝐞𝐫 𝐲𝐨𝐮'𝐫𝐞 𝐚 𝐬𝐭𝐮𝐝𝐞𝐧𝐭, 𝐚𝐧 𝐞𝐝𝐮𝐜𝐚𝐭𝐨𝐫, 𝐨𝐫 𝐚 𝐥𝐢𝐟𝐞𝐥𝐨𝐧𝐠 𝐥𝐞𝐚𝐫𝐧𝐞𝐫, 𝐰𝐞'𝐫𝐞 𝐡𝐞𝐫𝐞 𝐭𝐨 𝐞𝐦𝐩𝐨𝐰𝐞𝐫 𝐲𝐨𝐮 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐭𝐨𝐨𝐥𝐬 𝐚𝐧𝐝 𝐫𝐞𝐬𝐨𝐮𝐫𝐜𝐞𝐬 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 𝐭𝐨 𝐚𝐜𝐡𝐢𝐞𝐯𝐞 𝐲𝐨𝐮𝐫 𝐞𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐚𝐧𝐝 𝐩𝐫𝐨𝐟𝐞𝐬𝐬𝐢𝐨𝐧𝐚𝐥 𝐠𝐨𝐚𝐥𝐬." </h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="runanimae">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:200,100,400" rel="stylesheet" type="text/css" />
+
+            <h2 style="color: yellowgreen;" id="text"> </h2>
+            <script>
+              const txtFull = " RAGHURAJ PRATAP SINGH PRESENTING A WEBSITE FOR WEB DEVLOPERS"; //the text goes here
+            const txtArr = txtFull.split("");
+            
+            function getRandomTime() {
+              return Math.random() * 0.5;
+            }
+            function getEle(id) {
+              return document.getElementById("text");
+            }
+            function ModifyTxt(el, txt) {
+              return (el.innerHTML = txt);
+            }
+            function writeOut(txtArr, curChar = 0) {
+              const randomTime = getRandomTime();
+              setTimeout(
+                () => {
+                  const el = getEle("text");
+                  let elTxt = el.innerHTML;
+                  elTxt += txtArr[curChar];
+                  ModifyTxt(el, elTxt);
+                   if (curChar + 1 == txtArr.length) {
+                    return deleteOut(txtArr, txtArr.length);
+                  }
+                  return writeOut(txtArr, curChar + 1);
+                },
+            
+                randomTime * 200
+              );
+            }
+            function deleteOut(txtArr, curChar = 0) {
+              const randomTime = getRandomTime();
+              setTimeout(
+                () => {
+                  const el = getEle("text");
+                  let elTxt = el.innerHTML;
+                
+                  const elTxtArr = elTxt.split("");
+                  const elTxtArrLen = elTxtArr.length;
+                  console.log(elTxtArr.length - 1);
+                  const newElTxt = elTxtArr.splice(0, curChar - 1).join("");
+                  ModifyTxt(el, newElTxt);
+                  if (elTxtArrLen == 0) {
+                    return writeOut(txtArr, 0);
+                  }
+                  return deleteOut(txtArr, elTxtArrLen - 1);
+                },
+            
+                randomTime * 200
+              );
+              return;
+            }
+            writeOut(txtArr);
+            
+            </script>
+            <style>
+            
+            #text{
+                margin-left: 380PX;
+              border-right: 0.15em solid orange;
+              animation: blink 0.75s step-end infinite;
+              width: max-content;
+            }
+            
+            @keyframes blink {
+              from,
+              to {
+                border-color: crimson;
+              }
+              50% {
+                border-color: white;
+              }
+            }
+              
+            a{
+                padding: 10px;
+                min-height: 40px;
+                min-width: 40px;
+            }
+            .runanimae{
+                min-height: 60px;
+            }
+            </style>
+            </div>
+            <div   style=" margin-top: 90px;  padding: 10px; "    class="contact">
+                <center><h3 style="color: rgb(65, 225, 167); margin-left: 0px;"></h3></center>
+                
+                        <br>
+            
+              <p style="font-size: 30px; color: aquamarine;"></p>
+              <br>
+               <h4  style="font-size: 20px; color: #23d5ab;">Follow Me</h4><br>
+                                <div  style="padding: 10px;" class="social-links">
+                                
+                                  <a  style="color:white;   border-radius: 50%; background-color: rgb(131, 3, 97); height: 30px; width: 30px;"   href="https://www.instagram.com/i_am_raghurajsingh/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                                  <a style=" color:white;   background-color:#1353ba;  border-radius: 50%;" href="https://www.linkedin.com/in/raghuraj-pratap-singh-kietians/"> <i class="fa-brands fa-linkedin fa-2xl" ></i></a>
+                                 <a  style= "color:white;   border-radius: 50%; height: 30px; width: 30px; background-color: rgb(19, 18, 18);" href="https://github.com/raghurajsingh8"><i class="fa-brands fa-github fa-2xl"></i></a>
+                                </div>
+                                <br>
+              <p  style="font-size: 18px;"><b>raghurajsingh83170754477@gmail.com</b></p>
+              </div>
+              </center>
+      </section>
+    </header>
+    
+    
+    <script src="loginpage.js"></script>
+</body>
+</html>
